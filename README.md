@@ -1,27 +1,66 @@
-# MyAngular
+## Project Description:
+This Angular application is designed for the registration and tracking of projects. It features components for project registration, viewing project details, and listing registered projects. The application ensures a user-friendly interface and responsive design, adhering to best practices in Angular development.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.6.
+## Features:
+1. Header Component:
 
-## Development server
+-Displays the title of the portal.
+-Responsive design adapts to different screen sizes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. Project Registration:
 
-## Code scaffolding
+-Form for registering new projects with fields for project name, priority, manager, initiator department, contact person, start and end dates, description, file upload, team name, and team members.
+-Validation for required fields and correct data formats.
+-Ability to add and remove team members dynamically.
+-Displays a success message upon successful registration.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Project List:
 
-## Build
+-Displays a list of registered projects with search functionality.
+-Filters projects based on various criteria such as name, unique number, status, dates, manager, and team name.
+-Sorts projects by different fields.
+-Highlights overdue projects.
+-Allows setting and updating the progress of ongoing projects.
+-Provides links to project details and edit options.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. Project Detail View:
 
-## Running unit tests
+-Displays detailed information about a specific project.
+-Read-only fields for project information and team members.
+-Status update functionality for ongoing projects.
+-Back button to return to the project list.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used:
+-Angular 14+: For building the single-page application.
+-TypeScript: For type safety and advanced features.
+-Angular Router: For navigation and routing.
+-Reactive Forms: For handling forms and validation.
+-Angular HttpClient: For HTTP communication.
+-RxJS: For reactive programming.
+-Bootstrap: For styling and responsive design.
 
-## Running end-to-end tests
+## Project Structure:
+Components:
+-HeaderComponent: Displays the portal's header.
+-ProjectRegistrationComponent: Handles project registration.
+-ProjectListComponent: Displays the list of registered projects.
+-ProjectDetailComponent: Shows detailed information of a project.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Services:
+-ProjectService: Manages the list of projects and provides methods for adding and updating projects.
 
-## Further help
+Models:
+-Project: Defines the structure of a project.
+-TeamMember: Defines the structure of a team member.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Installation
+
+### Clone the repository
+```bash
+git clone https://github.com/MariamDZE1/Projects-Portal.git
+
+# Install dependencies
+npm install
+
+# Start the application
+ng serve
